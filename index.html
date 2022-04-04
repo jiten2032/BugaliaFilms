@@ -16,13 +16,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <title>BugaliaFilms</title>
 </head>
 
 <body>
+
+  <!-- Navbar -->
+
   <nav id="navbar-example2" class="navbar navbar-expand-sm">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -34,12 +38,12 @@
         <span class="navbar-toggler-icon collapseButtonColor"></span>
       </button>
       <div class="collapse navbar-collapse" id="mynavabar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#scrollspyHeading1">Home</a>
+        <ul class="navbar-nav ml-auto" id="navabarLIstItems">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">About Us</a>
+            <a class="nav-link" href="#AboutPage">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#scrollspyHeading3">Gallery</a>
@@ -54,15 +58,23 @@
             <a class="nav-link" href="#scrollspyHeading6">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading7">Contact Us</a>
+            <a class="nav-link" href="#scrollspyHeading7">
+              <a target="_blank" href="https://www.youtube.com/channel/UCb6XZoDZbv_wr8TVDXWn6lw"> <i
+                  style="font-size:24px;color: red;" class="fa">&#xf167;</i></a>
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- scrolsipy start -->
+
   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-    <h4 id="scrollspyHeading1">Test Home</h4>
-    <div>
+
+    <!-- Home page  -->
+
+    <div id="scrollspyHeading1">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -71,11 +83,19 @@
         </div>
       </div>
     </div>
-    <h4 id="scrollspyHeading2">About Us </h4>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p>
+
+    <!-- About Page  -->
+
+    <!-- <h4 > </h4> -->
+    <div class="container" id="AboutPage">
+
+      <div class="AboutPage-FirstSection row">
+        <div class="AboutPage-FirstSection-content col-md-6">
+          <h2 class="text-center">About Us
+          </h2>
+          <p class="AboutPage-FirstSection-content-titleContentbottom"></p>
+
+          <p class="AboutPage-FirstSection-content-subject">
             We have some of the best creative people from industry, who understand the process of film making and are
             passionate about cinema. Starting from concept visualization, creative scripting, scheduling and finding opt
             location, handling production and helping with the best cast & crew, visionary direction, advance equipment,
@@ -90,401 +110,413 @@
 
         </div>
 
-        <div class="col-md-6" id='Left-AboutUs'>
-          <div>
-            <h2> Visualization </h2>
-            <p>With a team of creative brains we follow the policy of smart working.We handle every single project with
-              the same passion and energy like our first one.</p>
-          </div>
-
-
-          <div>
-            <h2> Experience </h2>
-            <p>With enormous experience behind every single technician, we provide unmatched and cutting edge quality .
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-    <h4 id="scrollspyHeading3" class="text-center">Work Portfolio</h4>
-    <div class="container">
-      <div class="Gallery-Container">
-
-        <!-- Full-width images with number text -->
-        <div class="mySlides">
-          <div class="numbertext">1 / 6</div>
-          <img src="Images/img_woods_wide.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2 / 6</div>
-          <img src="Images/img_5terre_wide.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3 / 6</div>
-          <img src="Images/img_mountains_wide.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="Images/img_lights_wide.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-          <img src="Images/img_nature_wide.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-          <img src="Images/img_snow_wide.jpg" style="width:100%">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <p class="prev" onclick="plusSlides(-1)">❮</p>
-        <p class="next" onclick="plusSlides(1)">❯</p>
-
-        <!-- Image text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-        <!-- Thumbnail images -->
-        <div class="create-Row">
-          <div class="column">
-            <img class="demo cursor" src="Images/img_woods.jpg" style="width:100%" onclick="currentSlide(1)"
-              alt="The Woods">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)"
-              alt="Cinque Terre">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)"
-              alt="Mountains and fjords">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)"
-              alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/img_nature.jpg" style="width:100%" onclick="currentSlide(5)"
-              alt="Nature and sunrise">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="Images/img_snow.jpg" style="width:100%" onclick="currentSlide(6)"
-              alt="Snowy Mountains">
-          </div>
-        </div>
-      </div>
-    </div>
-    <h4 id="scrollspyHeading4" class="container">What We Do</h4>
-    <div class="container">
-      <p>Based in Mumbai and Jaipur, we operate and execute all kinds of production services across India. Be it
-        casting, location,
-        equipment, technicians or post production, we assure 100% dedication with trust and hard work.
-        Under Bugalia Films, we specialize in developing and producing:</p>
-      <div class="row justify-content-center">
-
-        <div class="col-md-5">
-          <div class="row justify-content-center">
-            <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
-            <div class="col-md-6">
-              <h3>Film and Television</h3>
-              <p>TV Commercials, Feature Films, Short Films, Corporate Films,Documentaries, Music Albums.</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-5">
-          <div class="row justify-content-center">
-            <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
-            <div class="col-md-6">
-              <h3> Digital media</h3>
-              <p>Web Series,Pre Wedding Films,Online Promotion,Complete You Tube solution,Flash Mob. </p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-      <div class="row justify-content-center">
-
-        <div class="col-md-4">
-          <div class="row justify-content-center">
-            <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
-            <div class="col-md-6">
-              <h3>Graphics & Animation</h3>
-              <p>2D &amp; 3D Animations, <br>AR &amp; VR Animations,<br>MOA's.</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4">
-          <div class="row justify-content-center">
-            <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
-            <div class="col-md-6">
-              <h3> Photography</h3>
-              <p>Fashion/Print/Wedding Photography,corporate events , Brand Promotional Photography.</p>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-
-    </div>
-    <h4 id="scrollspyHeading5"> Video Portfolio</h4>
-
-    <p style="font-size:23px">
-      <b>Bugalia Films</b> is one of the fastest growing <b>film production
-        company in India</b>. We strive to provide quality entertainment at affordable cost and yet preserve the
-      legendary history of cinema.
-    </p>
-    <div class="row">
-
-      <div class="col-md-6">
-        <img class="img-responsive" src="Images/film.png" alt="">
-      </div>
-      <div class="col-md-6">
-        <br>
-
-        <div class="embed-responsive embed-responsive-16by9"> <iframe width="600" height="500"
-            class="embed-responsive-item" src="https://www.youtube.com/embed/ENYZCT72CW0" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""></iframe></div>
-      </div>
-
-    </div>
-
-    <h4 id="scrollspyHeading6">Our Valuable Clients</h4>
-    <section class="">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-3">
-            <img class="zoom" src="Images/23.jpg" alt="">
-          </div>
-          <div class="col-md-3">
-            <img class="zoom" src="Images/19.jpg" alt="">
-          </div>
-          <div class="col-md-3">
-
-            <img class="zoom" src="Images/quack.png" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/24.jpg" alt="">
-          </div>
-
-
-
-          <!-- clients logo -->
-
-          <!-- end clients logo -->
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img class="zoom" src="Images/18.png" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/15 (3).jpg" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/11.jpg" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/3.jpg" alt="">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <img class="zoom" src="Images/13.jpg" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/17.jpg" alt="">
-          </div>
-          <div class="col-md-3">
-            <img class="zoom" src="Images/22.jpg" alt="">
-          </div>
-          <div class="col-md-3">
-            <img class="zoom" src="Images/14.png" alt="">
-          </div>
-
-
-          <!-- clients logo -->
-
-          <!-- end clients logo -->
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-3">
-            <img class="zoom" src="Images/9 (1).jpg" alt="">
-          </div>
-          <div class="col-md-3">
-            <img class="zoom" src="Images/29.png" alt="">
-          </div>
-          <div class="col-md-3">
-            <img class="zoom" src="Images/30.png" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/31.png" alt="">
-          </div>
-
-
-
-          <!-- clients logo -->
-
-          <!-- end clients logo -->
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-md-2">
-            <img class="zoom" src="Images/6.jpg" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img class="zoom" src="Images/10.png" alt="">
-          </div>
-          <div class="col-md-2">
-            <img class="zoom" src="Images/32.jpg" alt="">
-          </div>
-          <div class="col-md-2">
-            <img class="zoom" src="Images/8 (1).png" alt="">
-          </div>
-          <div class="col-md-2">
-            <img class="zoom" src="Images/4.jpg" alt="">
-          </div>
-
-          <div class="col-md-2">
-            <img class="zoom" src="Images/2.jpg" alt="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <img class="zoom" src="Images/7.jpg" alt="">
-          </div>
-
-          <div class="col-md-3">
-            <img class="zoom" src="Images/15 (3).jpg" alt="">
-          </div>
-          <div class="col-md-3">
-            <br>
-            <img class="zoom" src="Images/12.jpg" alt="">
-          </div>
-          <div class="col-md-3">
-            <br>
-            <img class="zoom" src="Images/qwik.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <h4 id="scrollspyHeading7">Contact us </h4>
-    <section class="contact-us-section section-padding" id="contact">
-      <div class="container">
-        <!-- Contact Us Section Title -->
-        <!-- <h2 class="section-title contact-title text-center">Contact Us</h2> -->
-        <p class="sub-title contact-subtitle text-center"><b>Contact:-</b>
-          Sanjay Bugalia :(M) +91 - 9967269072,&nbsp;(O) 022-49240895<br>
-          <b>Email:-</b>bugaliafilms@gmail.com, contact@bugaliafilms.com
-        </p>
-
-
-
-        <p class="sub-title contact-subtitle text-center"><b>Mumbai:-</b>
-          201, 2nd floor,
-
-          Nirman Industrial Estate<br>
-
-          Link Road, Malad West , Mumbai- 400064 India</p>
-
-        <p class="sub-title contact-subtitle text-center"><b>Jaipur:-</b>
-          19 a , Raman Vihar, Machada,
-
-          Murlipura,Jaipur- 302013 India</p>
-
-
-
-
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-            <div class="contact-form-section mt-50">
-              <form method="POST" action="" id="contactForm" name="contact-form" role="form">
-                <div class="row">
-                  <div class="col-sm-5 col-md-4">
-                    <!-- Name Field -->
-                    <div class="form-group contact-form-icon">
-                      <label class="sr-only">Name</label>
-                      <i class="fa fa-user"></i>
-                      <input type="text" placeholder="Name" id="name" class="form-control" name="name" required="">
-                    </div>
-                    <!-- Email Field -->
-                    <div class="form-group contact-form-icon">
-                      <label for="email" class="sr-only">Email</label>
-                      <i class="fa fa-envelope"></i>
-                      <input type="email" placeholder="Email" id="email" class="form-control" name="email" required="">
-                    </div>
-                    <!-- Subject Field -->
-                    <div class="form-group contact-form-icon">
-                      <label for="subject" class="sr-only">Subject</label>
-                      <i class="fa fa-pencil"></i>
-                      <input type="text" placeholder="Subject" id="subject" class="form-control" name="subject"
-                        required="">
-                    </div>
-                  </div>
-                  <div class="col-sm-7 col-md-8">
-                    <div class="form-group contact-form-icon">
-                      <label for="message" class="sr-only">Message</label>
-                      <i class="fa fa-keyboard-o"></i>
-                      <textarea placeholder="Message" rows="7" id="message" class="form-control" name="message"
-                        required=""></textarea>
-                    </div>
-                  </div>
-                  <div class="col-sm-5 col-md-4 text-center contact-button-padding">
-                    <button class="btn-primary btn-contact btn-block" name="submit" type="submit"><i
-                        class="fa fa-paper-plane"></i> Send</button>
-                  </div>
+        <div class="AboutPage-SecondSection-content col-md-6">
+          <div class="AboutPage-SecondSection-content-Wrapper">
+
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <div class="AboutPage-SecondSection-content-image">
+                  <i style='font-size:24px;' class='far'>&#xf0eb;</i>
                 </div>
-              </form>
+
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <h2 class="AboutPage-SecondSection-content-header"> Visualization </h2>
+                  <p>With a team of creative brains we follow the policy of smart working.We handle every single project
+                    with
+                    the same passion and energy like our first one.</p>
+                </div>
+              </div>
+
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="contact-section" class="footer-section">
-      <div class="container">
-        <div class="row mt-30 mb-30">
-          <div class="col-md-12 text-center">
-            <!-- Footer Copy Right Text -->
-            <div class="copyright-info">
-              <a href="http://datacubesoftech.com" style="font-size: 16px; color: #fff;"><span><i class="fa fa-code"></i></span> with <span><i
-                    class="fa fa-heart"></i>
-                <span style='color:#36b3c9'> By <span>Datacube Softech</span></a>
+            <div class="row justify-content-md-center mt-5">
+              <div class="col-md-2">
+                <div class="AboutPage-SecondSection-content-image">
+                  <i class="fa fa-pencil-square-o" style="font-size:24px"></i>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <h2 class="AboutPage-SecondSection-content-header"> Experience </h2>
+                  <p>With enormous experience behind every single technician, we provide unmatched and cutting edge
+                    quality
+                    .
+                  </p>
+                </div>
+              </div>
+
             </div>
 
-            <!-- Footer Social Icons -->
-            <div class="social-icons" style="margin-top: 30px;">
-              <a href="https://www.facebook.com/"><i class='fab fa-facebook-square' style='font-size:24px'></i></a>
-              <a href="https://twitter.com/"><i class="fab fa-twitter-square" style='font-size:24px'></i></a>
-              <a href="https://plus.google.com/"><i class="fab fa-google-plus-square" style='font-size:24px'></i></a>
-              <a href="https://youtube.com/"><i class="fab fa-youtube-square" style='font-size:24px'></i></a>
-            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <!-- Work page  -->
+
+    <div id="scrollspyHeading3" class="text-center mt-5">
+      <h4>Work Portfolio</h4>
+      <p style="height: 4px;
+      margin: 0 auto;
+      width: 65px;
+      background-color: #36b3c9;"></p>
+      <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-group g-2">
+              <div class="card">
+                <img src="Logos/Work Portfolio/02 copy.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/BEKHABAR_POSTER_1.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/Dark water.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/Pressure.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/Sard Hawa.jpeg" class="card-img-top" alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/WhatsApp Image 2022-02-12 at 7.57.54 AM.jpeg" class="card-img-top"
+                  alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/WhatsApp Image 2022-02-12 at 8.44.22 AM.jpeg" class="card-img-top"
+                  alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/WhatsApp Image 2022-02-12 at 8.46.51 AM.jpeg" class="card-img-top"
+                  alt="...">
+              </div>
+              <div class="card">
+                <img src="Logos/Work Portfolio/WhatsApp Image 2022-02-12 at 8.51.02 AM.jpeg" class="card-img-top"
+                  alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      <!-- what we do -->
+      <div id="scrollspyHeading4" class="text-center mt-5 ">
+        <h4 class="container">What We Do</h4>
+        <p style="height: 4px;
+                  margin: 0 auto;
+                  width: 65px;
+                  background-color: #36b3c9;"></p>
+        <div class="container mt-5">
+          <p>Based in Mumbai and Jaipur, we operate and execute all kinds of production services across India. Be it
+            casting, location,
+            equipment, technicians or post production, we assure 100% dedication with trust and hard work.
+            Under Bugalia Films, we specialize in developing and producing:</p>
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-6"><i class="fa fa-video-camera"></i></div>
+                <div class="col-md-6">
+                  <h3>Film and Television</h3>
+                  <p>TV Commercials, Feature Films, Short Films, Corporate Films,Documentaries, Music Albums.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
+                <div class="col-md-6">
+                  <h3> Digital media</h3>
+                  <p>Web Series,Pre Wedding Films,Online Promotion,Complete You Tube solution,Flash Mob. </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="row justify-content-center">
+
+            <div class="col-md-4">
+              <div class="row justify-content-center">
+                <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
+                <div class="col-md-6">
+                  <h3>Graphics & Animation</h3>
+                  <p>2D &amp; 3D Animations, <br>AR &amp; VR Animations,<br>MOA's.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="row justify-content-center">
+                <div class="col-md-6"><i class="fa fa-video-camera"></i> </div>
+                <div class="col-md-6">
+                  <h3> Photography</h3>
+                  <p>Fashion/Print/Wedding Photography,corporate events , Brand Promotional Photography.</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- Video page -->
+      <div id="scrollspyHeading5">
+        <h4 class="text-center mt-5">Video Portfolio</h4>
+        <p style=" height: 4px;
+                  margin: 0 auto;
+                  width: 65px;
+                 background-color: #36b3c9;">
+        </p>
+        <p style="font-size:23px" class="text-center container mt-5">
+          <b>Bugalia Films</b> is one of the fastest growing <b>film production
+            company in India</b>. We strive to provide quality entertainment at affordable cost and yet preserve the
+          legendary history of cinema.
+        </p>
+        <div class="row">
+          <div class="col-md-3">
+            <div>
+              <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FTheMarchingAngels%2Fvideos%2F1991581017691014%2F&show_text=false&width=560&t=0"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <iframe src="https://www.facebook.com/plugins/video.php?height=268&href=https%3A%2F%2Fwww.facebook.com%2FTheMarchingAngels%2Fvideos%2F338683350932222%2F&show_text=false&width=560&t=0"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <iframe src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2FTheKhushiThakur%2Fvideos%2F238052548516155%2F&show_text=false&width=560&t=0"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fgajmartofficial%2Fvideos%2F348965266190427%2F&show_text=false&width=560&t=0"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+              </div>
+          </div>
+          <!-- <div class="col-md-2">
+            <div>
+              <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fgajmartofficial%2Fvideos%2F665355744348294%2F&show_text=false&width=560&t=0"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+              </div>
+          </div> -->
+        </div>
+        <div class="row">
+         
+          <div class="col-md-3">
+            <div>
+              <iframe width="340" height="360" src="https://www.youtube.com/embed/ltZi0GN1EU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+          <!-- Video unavailable  -->
+          <!-- <div class="col-md-3">
+            <div>
+              <iframe width="340" height="360" src="https://www.youtube.com/embed/030mG190ylQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div> -->
+          <div class="col-md-3">
+            <div>
+              <iframe width="340" height="360" src="https://www.youtube.com/embed/BlRLuTBHYzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <iframe width="340" height="360" src="https://www.youtube.com/embed/CjCvW9d-Yfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div>
+              <iframe width="340" height="360" src="https://www.youtube.com/embed/sXO56QnZEbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- valuabale client -->
+
+      <section class="mt-5">
+        <div class="container">
+          <h4 class="text-center">Our Valuable clients</h4>
+          <p style="height: 4px;
+                    margin: 0 auto;
+                    width: 65px;
+                    background-color: #36b3c9;"></p>
+          <p style="font-size:23px" class="text-center container">
+          <div class="row mt-5">
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/101982913_102046954880171_8114132445592289280_n.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/10295668_291627934347230_6055382957031943460_n.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/1595760822237.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/161784548_5944970778850176_8083436061252690203_n.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/18595434_1896689530544341_442675010942937583_o.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/242048638_409049380584860_2182199485020755819_n.jpeg" alt="">
+            </div>
+          </div>
+
+            <!-- clients logo -->
+            <!-- end clients logo -->
+          <div class="row mt-5">
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/242048638_409049380584860_2182199485020755819_n.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/28954246_1561385817292981_4826819060820246599_o.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/72799621_929043650808148_9124804461556924416_n (2).jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/36087563_1623874657710028_2286472882802393088_n.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/download.png" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/ATM - Logo with name PNG (1) 2.png" alt="">
+            </div>
+          </div>
+            <!-- clients logo -->
+            <!-- end clients logo -->
+          
+          <div class="row mt-5">         
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/insta-dp 2.jpeg" alt="">
+            </div>
+            <div class="col-md-2">
+              <img class="zoom img-fluid" src="Logos/Clients/KT LOGO FINAL.jpeg" alt="">
+            </div>          
+          </div>
+              
+        </div>
+  
+    </section>
+
+       <!-- clients logo -->
+            <!-- end clients logo -->  
+
+    <!-- Contact page -->
+
+
+    <div id="scrollspyHeading6" class="mt-5">
+      <div class="d-block">
+        <section class="contact-us-section section-padding text-center" id="contact">
+          <div class="container">
+            <!-- Contact Us Section Title -->
+            <h2 class="section-title contact-title text-center py-5">Contact Us</h2>
+            <p class="sub-title contact-subtitle text-center"><b>Contact:-</b>
+              Sanjay Bugalia :(M) +91 - 9967269072,&nbsp;(O) 022-49240895<br>
+              <b>Email:-</b>bugaliafilms@gmail.com, contact@bugaliafilms.com
+            </p>
+            <p class="sub-title contact-subtitle text-center"><b>Mumbai:-</b>
+              201, 2nd floor,
+
+              Nirman Industrial Estate<br>
+
+              Link Road, Malad West , Mumbai- 400064 India</p>
+
+            <p class="sub-title contact-subtitle text-center"><b>Jaipur:-</b>
+              19 a , Raman Vihar, Machada,
+
+              Murlipura,Jaipur- 302013 India</p>
+
+
+
+
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+
+                <div class="contact-form-section">
+                  <form method="POST" action="" id="contactForm" name="contact-form" role="form">
+                    <div class="row">
+                      <div class="col-sm-5 col-md-4">
+                        <!-- Name Field -->
+                        <div class="form-group contact-form-icon">
+                          <label class="sr-only">Name</label>
+                          <!-- <i class="fa fa-user"></i> -->
+                          <i class="fa fa-user" style="font-size:24px"></i>
+                          <input type="text" placeholder="Name" id="name" class="form-control" name="name" required="">
+                        </div>
+                        <!-- Email Field -->
+                        <div class="form-group contact-form-icon">
+                          <label for="email" class="sr-only">Email</label>
+                          <!-- <i class="fa fa-envelope"></i> -->
+                          <input type="email" placeholder="Email" id="email" class="form-control" name="email"
+                            required="">
+                        </div>
+                        <!-- Subject Field -->
+                        <div class="form-group contact-form-icon">
+                          <label for="subject" class="sr-only">Subject</label>
+                          <!-- <i class="fa fa-pencil"></i> -->
+                          <input type="text" placeholder="Subject" id="subject" class="form-control" name="subject"
+                            required="">
+                        </div>
+                      </div>
+                      <div class="col-sm-7 col-md-8">
+                        <div class="form-group contact-form-icon">
+                          <label for="message" class="sr-only">Message</label>
+                          <!-- <i class="fa fa-keyboard-square"></i> -->
+                          <textarea placeholder="Message" rows="7" id="message" class="form-control" name="message"
+                            required=""></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 col-md-4 text-center contact-button-padding">
+                        <button class="btn-primary btn-contact btn-block" name="submit" type="submit"><i
+                            class="fa fa-paper-plane"></i> Send</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer id="contact-section" class="footer-section" style="background-color: #000;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <!-- Footer Copy Right Text -->
+              <div class="copyright-info my-5">
+                <a href="http://datacubesoftech.com" class="text-decoration-none" style='color:#36b3c9'><span><i
+                      class="fa fa-code"></i></span> with <span><i class="fa fa-heart"></i>
+                    <span> By <span>Datacube Softech</span></a>
+              </div>
+
+              <!-- Footer Social Icons -->
+              <div class="social-icons mb-5">
+                <a href="https://www.facebook.com/"><i class='fab fa-facebook-square' style='font-size:24px'></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square" style='font-size:24px'></i></a>
+                <a href="https://plus.google.com/"><i class="fab fa-google-plus-square" style='font-size:24px'></i></a>
+                <a href="https://youtube.com/"><i class="fab fa-youtube-square" style='font-size:24px'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+    </div>
   </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
